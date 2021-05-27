@@ -25,7 +25,7 @@ int main(int const argc, char **const argv) {
 }
 
 char *mkrndstr(size_t length) {
-    static char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789,.-#'?!";
+    static char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
     char *randomString = NULL;
     if (length > 0) {
         randomString = malloc(length + 1);
